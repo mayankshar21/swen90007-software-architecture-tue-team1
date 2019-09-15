@@ -1,5 +1,5 @@
 package datasource;
 
-public class CustomerMapper {
+public class CustomerMapper extends UserMapper{
 
 }

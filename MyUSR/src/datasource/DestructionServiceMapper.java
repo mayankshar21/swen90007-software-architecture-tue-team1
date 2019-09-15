@@ -1,5 +1,5 @@
 package datasource;
 
-public class DestructionServiceMapper {
+public class DestructionServiceMapper extends ServiceMapper{
 
 }

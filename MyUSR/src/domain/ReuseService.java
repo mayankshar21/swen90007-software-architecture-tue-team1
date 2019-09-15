@@ -1,5 +1,5 @@
 package domain;
 
-public class ReuseService {
+public class ReuseService extends Service{
 
 }

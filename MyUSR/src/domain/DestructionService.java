@@ -1,5 +1,5 @@
 package domain;
 
-public class DestructionService {
+public class DestructionService extends Service{
 
 }

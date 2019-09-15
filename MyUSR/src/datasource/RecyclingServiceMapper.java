@@ -1,5 +1,5 @@
 package datasource;
 
-public class RecyclingServiceMapper {
+public class RecyclingServiceMapper extends ServiceMapper{
 
 }

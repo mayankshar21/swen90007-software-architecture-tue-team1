@@ -1,5 +1,5 @@
 package domain;
 
-public class RecyclingService {
+public class RecyclingService extends Service{
 
 }

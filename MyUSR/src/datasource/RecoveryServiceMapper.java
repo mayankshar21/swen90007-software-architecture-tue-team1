@@ -1,5 +1,5 @@
 package datasource;
 
-public class RecoveryServiceMapper {
+public class RecoveryServiceMapper extends ServiceMapper{
 
 }
