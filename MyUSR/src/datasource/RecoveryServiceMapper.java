@@ -1,5 +1,10 @@
 package datasource;
 
-public class RecoveryServiceMapper extends ServiceMapper{
+import domain.ReuseService;
 
+public class RecoveryServiceMapper extends ServiceMapper{
+	
+	private void update(ReuseService reuseService) {
+		
+	}
 }

@@ -1,5 +1,11 @@
 package datasource;
 
-public class RecyclingServiceMapper extends ServiceMapper{
+import domain.RecyclingService;
+
+public class RecyclingServiceMapper extends ServiceMapper { 
+	
+private void update(RecyclingService recyclingService) {
+		
+	}
 
 }

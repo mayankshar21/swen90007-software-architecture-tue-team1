@@ -10,7 +10,7 @@ public abstract class Service {
 	private int serviceID;
 	private String address;
 	private String bookingDateAndTime;
-	private Status ;
+	private Status status;
 	private String serviceDescription;
 	private String progressDescription;
 	private String assignedStaff;

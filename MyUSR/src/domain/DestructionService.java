@@ -2,30 +2,39 @@ package domain;
 
 import java.util.ArrayList;
 
-public class DestructionService extends Service{
+public class DestructionService extends Service {
 	
-	private ArrayList<String> recoveryItems;
-	
+	private ArrayList<String> itemToDestroy;
+	private ArrayList<String> itemDestroyed; 
 
 	public DestructionService(String customerAccountName, String address, String bookingDateAndTime,
-			String serviceDescription, ArrayList<String> recoveryItems) {
+			String serviceDescription) {
 		super(customerAccountName, address, bookingDateAndTime, serviceDescription);
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void dataDestruction(ArrayList<String> itemToDestroy, ArrayList<String> itemDestroyed) {
 		
 	}
 	
-	public void resourceRecovery(String recoveryItems) {
-		
-	}
-	
-	public int applyRecoveryPolicy() {
+	public int applyDestructionPolicy() {
 		return 0;
 	}
 	
-	public void addItem(String recoveryItem) {
+	public void addItemToDestroy(String items) {
 		
 	}
 	
-	public void removeItem(String recoveryItem) {
+	public void removeItemToDestroy(String items) {
 		
 	}
+	
+	public void addItemDestroyed(String items) {
+		
+	}
+	
+	public void removeItemDestroyed(String items) {
+		
+	}
+	
 }
