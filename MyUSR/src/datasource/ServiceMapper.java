@@ -1,5 +1,5 @@
 package datasource;
 
-public abstract class ServiceMapper {
+public abstract class ServiceMapper implements DataMapper{
 
 }

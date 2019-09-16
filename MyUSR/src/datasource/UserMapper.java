@@ -1,5 +1,5 @@
 package datasource;
 
-public abstract class UserMapper {
+public abstract class UserMapper implements DataMapper{
 
 }
