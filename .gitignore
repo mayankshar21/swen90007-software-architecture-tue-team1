@@ -1,3 +1,4 @@
 /.metadata/
 apache-tomcat-9.0.24/
 /.classpath/
+/postgresql-42.2.6.jar/
