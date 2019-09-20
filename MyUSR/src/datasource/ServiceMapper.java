@@ -1,19 +1,32 @@
 package datasource;
 
-public abstract class ServiceMapper implements DataMapper{
-import domain.Service;
+import domain.DomainObject;
+import domain.RecyclingService;
 
-public abstract class ServiceMapper {
+public class ServiceMapper {
 	
-	public void findService(int serviceID) {
+	public static boolean insert(DomainObject obj) throws Exception {
+		
+		if(obj instanceof RecyclingService) {
+			RecyclingServiceMapper.getThisClass().insert(obj);
+		} else {
+			throw new Exception("insert unknow type");
+		}
+		return false;
 		
 	}
-	
-	public void deleteService(int serviceID) {
+
+	public static boolean update(DomainObject obj) {
+		return false;
 		
 	}
-	
-	public void updateService(Service service) {
+
+	public static boolean delete(DomainObject obj) {
+		return false;
+	}
+
+	public static DomainObject query(DomainObject obj) {
+		return obj;
 		
 	}
 }

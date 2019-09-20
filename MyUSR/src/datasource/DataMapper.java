@@ -1,9 +1,12 @@
 package datasource;
 
+import domain.DomainObject;
 
-
-public interface DataMapper<DomainObject> {
-	void insert(DomainObject object);
-	void update(DomainObject object);
-	void delete(DomainObject object);
+public interface DataMapper {
+	
+	public boolean insert(DomainObject object);
+	public boolean update(DomainObject object);
+	public boolean delete(DomainObject object);
+	public DomainObject queryWithID(int id);
+	
 }

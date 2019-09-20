@@ -1,31 +1,36 @@
 package datasource;
 
+import domain.DomainObject;
 import domain.ReuseService;
+import domain.Service;
 
-<<<<<<< HEAD
-	@Override
-	public void insert() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void update() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void delete() {
-		// TODO Auto-generated method stub
-		
-	}
-
-=======
-public class RecoveryServiceMapper extends ServiceMapper{
+public class RecoveryServiceMapper implements DataMapper {
 	
 	private void update(ReuseService reuseService) {
 		
 	}
->>>>>>> 07c1402c74eca436a12d7e08f8c8760400de501c
+
+	@Override
+	public boolean insert(DomainObject object) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean update(DomainObject object) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean delete(DomainObject object) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public DomainObject queryWithID(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

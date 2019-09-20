@@ -7,9 +7,8 @@ public class DestructionService extends Service {
 	private ArrayList<String> itemToDestroy;
 	private ArrayList<String> itemDestroyed; 
 
-	public DestructionService(String customerAccountName, String address, String bookingDateAndTime,
-			String serviceDescription) {
-		super(customerAccountName, address, bookingDateAndTime, serviceDescription);
+	public DestructionService(String customerAccountName, String adminAccountName, int serviceID, String address, String bookingDateTime, Status status, String serviceDescription, String progressDescription, String assignedStaff) {
+		super(customerAccountName, adminAccountName, serviceID, address, bookingDateTime, status, serviceDescription, progressDescription, assignedStaff);
 		// TODO Auto-generated constructor stub
 	}
 	

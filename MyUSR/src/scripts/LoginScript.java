@@ -24,7 +24,7 @@ public class LoginScript extends HttpServlet{
 			response.sendRedirect("NewFile.jsp");
 		}else {
 			PrintWriter out = response.getWriter();
-			out.print( "Wrong combination");
+			out.print("Wrong combination");
 		}
 	}
 }

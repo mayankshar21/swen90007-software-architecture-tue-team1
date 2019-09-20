@@ -3,13 +3,13 @@ package domain;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public abstract class Service {
+public abstract class Service implements DomainObject{
 	private String customerAccountName;
 	private String adminAccountName;
 	private ArrayList<User> userList;
 	private int serviceID;
 	private String address;
-	private String bookingDateAndTime;
+	private String bookingDateTime;
 	private Status status;
 	private String serviceDescription;
 	private String progressDescription;
@@ -17,13 +17,17 @@ public abstract class Service {
 	private HashMap<String, Integer> priceList;
 	
 	
-	public Service(String customerAccountName,
-			String address, String bookingDateAndTime, String serviceDescription) {
+	public Service(String customerAccountName, String adminAccountName, int serviceID, String address, String bookingDateTime, Status status, String serviceDescription, String progressDescription, String assignedStaff) {
 		super();
+		this.adminAccountName = adminAccountName;
 		this.customerAccountName = customerAccountName;
+		this.serviceID = serviceID;
 		this.address = address;
-		this.bookingDateAndTime = bookingDateAndTime;
+		this.bookingDateTime = bookingDateTime;
+		this.status = status;
 		this.serviceDescription = serviceDescription;
+		this.progressDescription = progressDescription;
+		this.assignedStaff = assignedStaff;
 	}
 	
 	public void updateProgress(String assignedStaff) {
@@ -92,12 +96,23 @@ public abstract class Service {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public String getBookingDateAndTime() {
-		return bookingDateAndTime;
+
+	public String getBookingDateTime() {
+		return bookingDateTime;
 	}
-	public void setBookingDateAndTime(String bookingDateAndTime) {
-		this.bookingDateAndTime = bookingDateAndTime;
+
+	public void setBookingDateTime(String bookingDateTime) {
+		this.bookingDateTime = bookingDateTime;
 	}
+	
+	public Status getStatus() {
+		return status;
+	}
+
+	public void setStatus(Status status) {
+		this.status = status;
+	}
+
 	public String getServiceDescription() {
 		return serviceDescription;
 	}
@@ -123,4 +138,15 @@ public abstract class Service {
 		this.priceList = priceList;
 	}
 	
+	@Override
+	public void applyIDMap() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public int getID() {
+		// TODO Auto-generated method stub
+		return 1;
+	}
 }
